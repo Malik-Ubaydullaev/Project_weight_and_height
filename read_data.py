@@ -8,6 +8,7 @@ def read_csv_data(file_path):
     Returns:
         list: data split row
     """
+    # WRITE YOUR CODE HERE
     result_data = []
     reader = ''
     with open(file_path, newline='') as csvfile:
@@ -15,8 +16,8 @@ def read_csv_data(file_path):
         for row in reader:
             result_data.append(row)
     
-   # print(result_data)
-    # WRITE YOUR CODE HERE
+    #print(result_data)
+    
     return result_data
 
 file_path = 'data/weight-height.csv'
