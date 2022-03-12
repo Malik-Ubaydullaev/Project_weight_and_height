@@ -31,13 +31,13 @@ def get_data(data):
         
         for k in data[i].keys():
             if k == 'Height':
-                height.append(data[i][k])
+                height.append(float(data[i][k])/2.54)
             if k == 'Weight':
-                weight.append(data[i][k])
+                weight.append(float(data[i][k])*2.205)
                     
         i+=1    
 
-    
+    print(weight)
     return gender,weight,height
 
 data=read_csv_data('data/weight-height.csv');
