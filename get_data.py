@@ -37,8 +37,8 @@ def get_data(data):
                     
         i+=1    
 
-    print(weight)
+    #print(weight)
     return gender,weight,height
 
-data=read_csv_data('data/weight-height.csv');
-get_data(data)
+#data=read_csv_data('data/weight-height.csv');
+#get_data(data)
