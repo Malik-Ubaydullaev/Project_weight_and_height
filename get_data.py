@@ -17,5 +17,28 @@ def get_data(data):
     height = []
     
     # WRITE YOUR CODE HERE
+    #print(data)
+    #print(data[0].values())
+    
+    val = []
+    i = 0
+    while i < len(data):
+        for val in data[i].values():
+            if val == 'Male':
+                gender.append(0)
+            elif val == 'Female':
+                gender.append(1)
+        
+        for k in data[i].keys():
+            if k == 'Height':
+                height.append(data[i][k])
+            if k == 'Weight':
+                weight.append(data[i][k])
+                    
+        i+=1    
 
+    
     return gender,weight,height
+
+data=read_csv_data('data/weight-height.csv');
+get_data(data)
